@@ -3,6 +3,7 @@
 Este repositório contém minha solução para o desafio **CRUD GraphQL Relay** proposto pela **Woovi**.
 
 ## 📘 Este README está disponível em:
+
 > - [🇺🇸 Inglês (EUA)](./README.md)
 > - [🇧🇷 Português (BR)](./README.pt-BR.md)
 
@@ -15,6 +16,17 @@ O principal objetivo deste desafio é explorar e aprender a pilha de tecnologia 
 - Praticar habilidades de desenvolvimento full-stack
 - Aprender mais sobre a arquitetura de sistemas de pagamento modernos
 - Escrever código limpo, legível e escalável
+
+## 🎨 Tema do Desafio
+
+O tema proposto é construir uma **réplica simples de um banco**, com as seguintes funcionalidades:
+
+- Enviar uma transação
+- Receber uma transação
+- Calcular o saldo disponível de uma conta
+- Realizar transações entre duas contas
+
+Este desafio faz parte do processo técnico da **Woovi** e tem como objetivo demonstrar habilidades em arquitetura de software, modelagem de domínio, uso de API GraphQL com Relay e boas práticas de desenvolvimento full-stack.
 
 ## 📚 Referência
 
@@ -29,7 +41,7 @@ Este projeto foi desenvolvido com base na stack utilizada pela Woovi:
 - **Node.js** – Tempo de execução JavaScript para aplicações do lado do servidor
 - **TypeScript** – Tipagem estática para JavaScript
 - **GraphQL** – API flexível e declarativa
-- **Relay** – Framework do Meta para manipulação eficiente de dados GraphQL
+- **Relay** – Framework da Meta (Facebook) para manipulação eficiente de dados GraphQL
 - **MongoDB** – Banco de dados NoSQL orientado a documentos
 - **Jest** – estes automatizados de unidade e integração
 
