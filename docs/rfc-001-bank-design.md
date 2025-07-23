@@ -69,14 +69,15 @@ The diagram below illustrates the main relationships within the domain and trans
 
 #### 3. Transaction
 
-| Field         | Type   | Description                           |
-| ------------- | ------ | ------------------------------------- |
-| ID            | String | Unique identifier (UUID)              |
-| fromAccountId | String | Source account                        |
-| toAccountId   | String | Destination account                   |
-| amount        | Number | Transaction amount (in cents)         |
-| type          | String | Transaction type (pix, debit, credit) |
-| date          | Date   | Date of the operation                 |
+| Field         | Type   | Description                                |
+| ------------- | ------ | ------------------------------------------ |
+| ID            | String | Unique identifier (UUID)                   |
+| fromAccountId | String | Source account                             |
+| toAccountId   | String | Destination account                        |
+| amount        | Number | Transaction amount (in cents)              |
+| type          | String | Transaction type (pix, debit, credit)      |
+| status        | String | Transaction status (processing, completed) |
+| date          | Date   | Date of the operation                      |
 
 ---
 
@@ -167,6 +168,7 @@ Records all monetary transactions between accounts. Includes debits and credits 
 - `toAccountId`: Reference to the receiver account
 - `amount`: Value of the transaction in cents
 - `type`: String (`pix`, `debit` or `credit`)
+- `status`: String (`processing`, `completed`)
 - `date`: Timestamp of the transaction
 
 **Sample `transaction` document:**
@@ -178,6 +180,7 @@ Records all monetary transactions between accounts. Includes debits and credits 
   "toAccountId": "64be3f2e5b9e3f001f0a9abc",
   "amount": 5000,
   "type": "debit",
+  "status": "processing",
   "date": "2025-07-22T13:15:00Z"
 }
 ```
