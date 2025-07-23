@@ -137,13 +137,14 @@ Represents bank accounts tied to individual users. An account is uniquely identi
 
 ```json
 {
-  "_id": "64be3f2e5b9e3f001f0a1234",
-  "taxId": "12345678901",
-  "name": "João da Silva",
-  "email": "joao.silva@email.com",
-  "passwordHash": "$2b$10$Y5dLphtlA2s5pNW6J9P/hO8Z2f1nRbJmKrETbZMnA.1gZLZ3xZqEa",
-  "createdAt": "2025-07-22T13:00:00Z",
-  "updatedAt": "2025-07-22T13:00:00Z"
+  "_id": "64be3f2e5b9e3f001f0a5678",
+  "ownerId": "64be3f2e5b9e3f001f0a1234",
+  "accountNumber": "1234567",
+  "accountDigit": "0",
+  "agency": "0001",
+  "type": "payment",
+  "balance": 250000,
+  "createdAt": "2025-07-22T13:05:00Z"
 }
 ```
 
