@@ -1,5 +1,7 @@
 import type { Route } from "./+types/home";
 
+import { Logo } from "@woovi-challenge/ui/components/Logo";
+
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Banking System" },
@@ -11,7 +13,7 @@ export default function Home() {
   return (
     <main>
       <div>
-        <h1>Banking System</h1>
+        <Logo />
       </div>
     </main>
   );
