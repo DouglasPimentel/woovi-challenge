@@ -57,7 +57,7 @@ For more information about Woovi complete stack, check out their official blog p
 ### 🧱 Initial Setup
 
 - [ ] Set up repository and initial environment
-- [ ] Define database modeling (MongoDB)
+- [x] Define database modeling (MongoDB)
 
 ### 💻 Frontend
 
