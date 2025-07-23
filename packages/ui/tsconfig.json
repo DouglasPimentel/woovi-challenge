@@ -1,0 +1,11 @@
+{
+  "extends": "@woovi-challenge/typescript-config/react-library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@woovi-challenge/ui/*": ["./src/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["dist", "build", "node_modules"]
+}

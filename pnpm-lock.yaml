@@ -99,7 +99,42 @@ importers:
 
   packages/typescript-config: {}
 
+  packages/ui:
+    dependencies:
+      react:
+        specifier: ^19.1.0
+        version: 19.1.0
+      react-dom:
+        specifier: ^19.1.0
+        version: 19.1.0(react@19.1.0)
+    devDependencies:
+      '@tailwindcss/postcss':
+        specifier: ^4.1.11
+        version: 4.1.11
+      '@types/node':
+        specifier: ^20.19.9
+        version: 20.19.9
+      '@types/react':
+        specifier: ^19.1.8
+        version: 19.1.8
+      '@types/react-dom':
+        specifier: ^19.1.6
+        version: 19.1.6(@types/react@19.1.8)
+      '@woovi-challenge/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      tailwindcss:
+        specifier: ^4.1.11
+        version: 4.1.11
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
+
 packages:
+
+  '@alloc/quick-lru@5.2.0':
+    resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
+    engines: {node: '>=10'}
 
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
@@ -730,6 +765,9 @@ packages:
   '@tailwindcss/oxide@4.1.11':
     resolution: {integrity: sha512-Q69XzrtAhuyfHo+5/HMgr1lAiPP/G40OMFAnws7xcFEYqcypZmdW8eGXaOUIeOl1dzPJBPENXgbjsOyhg2nkrg==}
     engines: {node: '>= 10'}
+
+  '@tailwindcss/postcss@4.1.11':
+    resolution: {integrity: sha512-q/EAIIpF6WpLhKEuQSEVMZNMIY8KhWoAemZ9eylNAih9jxMGAYPPWBn3I9QL/2jZ+e7OEz/tZkX5HwbBR4HohA==}
 
   '@tailwindcss/vite@4.1.11':
     resolution: {integrity: sha512-RHYhrR3hku0MJFRV+fN2gNbDNEh3dwKvY8XJvTxCSXeMOsCRSr+uKvDWQcbizrHgjML6ZmTE5OwMrl5wKcujCw==}
@@ -2454,6 +2492,8 @@ packages:
 
 snapshots:
 
+  '@alloc/quick-lru@5.2.0': {}
+
   '@ampproject/remapping@2.3.0':
     dependencies:
       '@jridgewell/gen-mapping': 0.3.12
@@ -3055,6 +3095,14 @@ snapshots:
       '@tailwindcss/oxide-wasm32-wasi': 4.1.11
       '@tailwindcss/oxide-win32-arm64-msvc': 4.1.11
       '@tailwindcss/oxide-win32-x64-msvc': 4.1.11
+
+  '@tailwindcss/postcss@4.1.11':
+    dependencies:
+      '@alloc/quick-lru': 5.2.0
+      '@tailwindcss/node': 4.1.11
+      '@tailwindcss/oxide': 4.1.11
+      postcss: 8.5.6
+      tailwindcss: 4.1.11
 
   '@tailwindcss/vite@4.1.11(vite@6.3.5(@types/node@20.19.9)(jiti@2.5.0)(lightningcss@1.30.1))':
     dependencies:
