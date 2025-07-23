@@ -1,0 +1,23 @@
+{
+  "name": "woovi-challenge",
+  "version": "0.1.0",
+  "description": "Woovi Challenge - CRUD Bank",
+  "keywords": [
+    "challenge",
+    "woovi",
+    "bank"
+  ],
+  "author": "Douglas Pimentel <dev.pimentel@gmail.com>",
+  "license": "ISC",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.5"
+  },
+  "packageManager": "pnpm@10.13.1",
+  "engines": {
+    "node": ">=22.16.0"
+  }
+}
