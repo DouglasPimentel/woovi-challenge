@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/styles/globals.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "aliases": {
+    "components": "@woovi-challenge/ui/components",
+    "utils": "@woovi-challenge/ui/lib/utils",
+    "ui": "@woovi-challenge/ui/components",
+    "lib": "@woovi-challenge/ui/lib",
+    "hooks": "@woovi-challenge/ui/hooks"
+  },
+  "iconLibrary": "lucide"
+}

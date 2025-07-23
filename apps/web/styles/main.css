@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @import "@woovi-challenge/ui/globals.css";
-@source '../../../../packages/ui';
+@source '../../../packages/ui';
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,

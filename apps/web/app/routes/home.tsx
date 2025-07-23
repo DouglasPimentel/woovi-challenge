@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home";
 
-import { Logo } from "@woovi-challenge/ui/components/Logo";
+import { Logo } from "@woovi-challenge/ui/components/logo";
 
 export function meta({}: Route.MetaArgs) {
   return [
