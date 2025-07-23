@@ -58,12 +58,12 @@ Lista de atividades para concluir o desafio:
 
 ### 🧱 Estrutura Inicial
 
-- [ ] Configurar repositório e ambiente inicial
-- [ ] Definir modelagem do banco de dados (MongoDB)
+- [x] Configurar repositório e ambiente inicial
+- [x] Definir modelagem do banco de dados (MongoDB)
 
 ### 💻 Frontend
 
-- [ ] Configurar aplicação web com Vite + React Router + TailwindCSS + shadcn/ui
+- [x] Configurar aplicação web com Vite + React Router + TailwindCSS + shadcn/ui
 - [ ] Implementar componentes de interface reutilizáveis com a biblioteca shadcn/ui
 - [ ] Criar layout base (Header, Sidebar, etc.)
 - [ ] Criar dashboard do usuário (interface inicial)

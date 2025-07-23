@@ -56,12 +56,12 @@ For more information about Woovi complete stack, check out their official blog p
 
 ### 🧱 Initial Setup
 
-- [ ] Set up repository and initial environment
+- [x] Set up repository and initial environment
 - [x] Define database modeling (MongoDB)
 
 ### 💻 Frontend
 
-- [ ] Set up web application with Vite + React Router + TailwindCSS + shadcn/ui
+- [x] Set up web application with Vite + React Router + TailwindCSS + shadcn/ui
 - [ ] Implement reusable UI components using the shadcn/ui library
 - [ ] Create base layout (Header, Sidebar, etc.)
 - [ ] Build user dashboard (initial interface)
