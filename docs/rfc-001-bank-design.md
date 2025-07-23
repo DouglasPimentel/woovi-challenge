@@ -2,7 +2,7 @@
 
 - **Author:** Douglas
 - **Created At:** 2025-07-22
-- **Last Updated:** 2025-07-22
+- **Last Updated:** 2025-07-23
 
 ## 📄 Context
 
@@ -34,6 +34,10 @@ The Brazilian banking system is composed of financial institutions regulated and
 ---
 
 ## 🧱 Domain Modeling
+
+The diagram below illustrates the main relationships within the domain and transaction flow:
+
+![Domain Model Diagram](./diagram-bank-design-2025-07-23-1020.png)
 
 ### 🧩 Entities
 
