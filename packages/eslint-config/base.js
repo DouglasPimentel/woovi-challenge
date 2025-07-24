@@ -27,13 +27,6 @@ export const config = [
     },
   },
   {
-    ignores: [
-      "node_modules",
-      "dist/**",
-      "build/**",
-      "coverage/**",
-      "public/**",
-      "out/**",
-    ],
+    ignores: ["node_modules", "dist/**", "build/**", "coverage/**", "public/**", "out/**"],
   },
 ];

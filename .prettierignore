@@ -1,0 +1,11 @@
+# See https://prettier.io/docs/en/ignore/ for more about ignoring files.
+
+**/node_modules
+**/.next
+**/.idea
+**/dist
+**/build
+**/coverage
+**/.turbo
+**/.vercel
+**/.react-router

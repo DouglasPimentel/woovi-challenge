@@ -5,10 +5,7 @@ import { Input } from "@woovi-challenge/ui/components/input";
 import { Button } from "@woovi-challenge/ui/components/button";
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "Register - Banking System" },
-    { name: "description", content: "Welcome to Banking System!" },
-  ];
+  return [{ title: "Register - Banking System" }, { name: "description", content: "Welcome to Banking System!" }];
 }
 
 export default function Register() {
@@ -24,14 +21,7 @@ export default function Register() {
             <label className="text-sm font-bold" htmlFor="taxId">
               Tax ID
             </label>
-            <Input
-              className="w-full"
-              type="text"
-              name="taxId"
-              id="taxId"
-              placeholder="Enter your tax ID"
-              required
-            />
+            <Input className="w-full" type="text" name="taxId" id="taxId" placeholder="Enter your tax ID" required />
           </div>
           <div className="grid gap-2">
             <label className="text-sm font-bold" htmlFor="fullName">
@@ -50,14 +40,7 @@ export default function Register() {
             <label className="text-sm font-bold" htmlFor="email">
               Email
             </label>
-            <Input
-              className="w-full"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email"
-              required
-            />
+            <Input className="w-full" type="email" name="email" id="email" placeholder="Enter your email" required />
           </div>
           <div className="grid gap-2">
             <label className="text-sm font-bold" htmlFor="password">
