@@ -4,10 +4,7 @@ import Header from "@/components/header";
 import { Container } from "@woovi-challenge/ui/components/container";
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "Dashboard - Banking System" },
-    { name: "description", content: "Welcome to Banking System!" },
-  ];
+  return [{ title: "Dashboard - Banking System" }, { name: "description", content: "Welcome to Banking System!" }];
 }
 
 export default function Dashboard() {

@@ -1,10 +1,6 @@
 import { Container } from "@woovi-challenge/ui/components/container";
 import { Logo } from "@woovi-challenge/ui/components/logo";
-import {
-  Avatar,
-  AvatarImage,
-  AvatarFallback,
-} from "@woovi-challenge/ui/components/avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "@woovi-challenge/ui/components/avatar";
 import { Button } from "@woovi-challenge/ui/components/button";
 
 export default function Header() {
