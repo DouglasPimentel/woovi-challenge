@@ -1,6 +1,5 @@
 import type { Route } from "./+types/dashboard";
 
-import Header from "@/components/header";
 import { Container } from "@woovi-challenge/ui/components/container";
 
 export function meta({}: Route.MetaArgs) {
@@ -9,27 +8,24 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Dashboard() {
   return (
-    <>
-      <Header />
-      <main className="mt-8">
-        <section>
-          <Container>
-            <h2 className="text-xl font-bold">Welcome, João da Silva</h2>
-          </Container>
-        </section>
-        <section className="w-full mt-12">
-          <Container>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-lg font-semibold">Account Balance</h3>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold">Latest transactions</h3>
-              </div>
+    <main className="mt-8">
+      <section>
+        <Container>
+          <h2 className="text-xl font-bold">Welcome, João da Silva</h2>
+        </Container>
+      </section>
+      <section className="w-full mt-12">
+        <Container>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-lg font-semibold">Account Balance</h3>
             </div>
-          </Container>
-        </section>
-      </main>
-    </>
+            <div>
+              <h3 className="text-lg font-semibold">Latest transactions</h3>
+            </div>
+          </div>
+        </Container>
+      </section>
+    </main>
   );
 }
