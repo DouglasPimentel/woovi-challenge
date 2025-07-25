@@ -1,20 +1,25 @@
+import { Container } from "@woovi-challenge/ui/components/container";
 import { Logo } from "@woovi-challenge/ui/components/logo";
-import { Avatar, AvatarImage, AvatarFallback } from "@woovi-challenge/ui/components/avatar";
+import {
+  Avatar,
+  AvatarImage,
+  AvatarFallback,
+} from "@woovi-challenge/ui/components/avatar";
 import { Button } from "@woovi-challenge/ui/components/button";
 
 export default function Header() {
   return (
-    <header className="py-4 px-8 border-b border-solid border-gray-200">
-      <div className="flex items-center justify-between">
+    <header className="w-full py-4 border-b border-solid border-gray-200">
+      <Container className="flex items-center justify-between">
         <div>
           <Logo />
         </div>
         <div className="flex items-center space-x-8">
           <div className="hidden md:block space-x-4">
-            <Button className="cursor-pointer" variant="outline" type="">
+            <Button className="cursor-pointer" variant="outline" type="button">
               Bank Details
             </Button>
-            <Button className="cursor-pointer" variant="default">
+            <Button className="cursor-pointer" variant="default" type="button">
               New Transaction
             </Button>
           </div>
@@ -25,7 +30,7 @@ export default function Header() {
             </Avatar>
           </div>
         </div>
-      </div>
+      </Container>
     </header>
   );
 }
