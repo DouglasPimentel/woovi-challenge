@@ -4,6 +4,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@woovi-challenge/ui/compone
 import { Button } from "@woovi-challenge/ui/components/button";
 
 import NewTransactionDialog from "@/components/new-transaction-dialog";
+import BankDetailsDialog from "@/components/bank-details-dialog";
 
 export default function Header() {
   return (
@@ -14,9 +15,7 @@ export default function Header() {
         </div>
         <div className="flex items-center space-x-8">
           <div className="hidden md:grid grid-cols-2 space-x-4">
-            <Button className="cursor-pointer" variant="outline" type="button">
-              Bank Details
-            </Button>
+            <BankDetailsDialog />
             <NewTransactionDialog />
           </div>
           <div>
