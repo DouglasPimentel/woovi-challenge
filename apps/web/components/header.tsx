@@ -3,6 +3,8 @@ import { Logo } from "@woovi-challenge/ui/components/logo";
 import { Avatar, AvatarImage, AvatarFallback } from "@woovi-challenge/ui/components/avatar";
 import { Button } from "@woovi-challenge/ui/components/button";
 
+import NewTransactionDialog from "@/components/new-transaction-dialog";
+
 export default function Header() {
   return (
     <header className="w-full py-4 border-b border-solid border-gray-200">
@@ -11,13 +13,11 @@ export default function Header() {
           <Logo />
         </div>
         <div className="flex items-center space-x-8">
-          <div className="hidden md:block space-x-4">
+          <div className="hidden md:grid grid-cols-2 space-x-4">
             <Button className="cursor-pointer" variant="outline" type="button">
               Bank Details
             </Button>
-            <Button className="cursor-pointer" variant="default" type="button">
-              New Transaction
-            </Button>
+            <NewTransactionDialog />
           </div>
           <div>
             <Avatar className="w-10 h-10">
