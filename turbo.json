@@ -2,12 +2,17 @@
   "$schema": "https://turborepo.com/schema.json",
   "tasks": {
     "build": {
-      "outputs": ["dist/**"]
+      "env": ["HOSTNAME", "PORT"],
+      "outputs": ["dist/**", "build/**"]
+    },
+    "start": {
+      "env": ["HOSTNAME", "PORT"]
     },
     "check-types": {
       "dependsOn": ["^check-types"]
     },
     "dev": {
+      "env": ["HOSTNAME", "PORT"],
       "persistent": true,
       "cache": false
     }

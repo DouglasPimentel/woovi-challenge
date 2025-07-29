@@ -1,0 +1,12 @@
+{
+  "extends": "@woovi-challenge/typescript-config/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+    },
+    "outDir": "./build",
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "dist", "build", "coverage"],
+}
