@@ -12,5 +12,6 @@ export const config = {
   PORT: Number(process.env.PORT) || 8080,
   MONGO_URI: process.env.MONGO_URI || "mongodb://localhost:27017/mydatabase",
   JWT_SECRET: process.env.JWT_SECRET || "shhhh",
+  JWT_ALG: process.env.JWT_ALG || "HS256",
   JWT_EXPIRATION: process.env.JWT_EXPIRATION || "1h",
 };
