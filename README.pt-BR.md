@@ -72,7 +72,7 @@ Lista de atividades para concluir o desafio:
 
 ### 🔧 Backend
 
-- [ ] Configurar servidor GraphQL com Node.js + KoaJS + TypeScript + Mongoose
+- [x] Configurar servidor GraphQL com Node.js + KoaJS + TypeScript + Mongoose
 - [ ] Integrar Relay ao backend GraphQL
 - [ ] Implementar módulo de usuários (CRUD)
 - [ ] Implementar módulo de contas bancárias (CRUD)

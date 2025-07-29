@@ -70,7 +70,7 @@ For more information about Woovi complete stack, check out their official blog p
 
 ### 🔧 Backend
 
-- [ ] Set up GraphQL server with Node.js + KoaJS + TypeScript + Mongoose
+- [x] Set up GraphQL server with Node.js + KoaJS + TypeScript + Mongoose
 - [ ] Integrate Relay on the backend GraphQL
 - [ ] Implement user module (CRUD)
 - [ ] Implement bank accounts module (CRUD)
