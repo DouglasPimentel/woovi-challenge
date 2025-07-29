@@ -2,6 +2,8 @@ import Koa from "koa";
 import bodyParser from "koa-bodyparser";
 import logger from "koa-logger";
 import Router from "koa-router";
+import { graphqlHTTP } from "koa-graphql";
+import { schema } from "@/schema";
 
 export const app = new Koa();
 const routes = new Router();
@@ -26,6 +28,14 @@ routes.get("/", async ctx => {
     2,
   );
 });
+
+routes.all(
+  "/graphql",
+  graphqlHTTP(() => ({
+    schema,
+    graphiql: true,
+  })),
+);
 
 app.use(routes.routes());
 app.use(routes.allowedMethods());

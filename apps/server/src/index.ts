@@ -1,3 +1,3 @@
-import { setupServer } from "@/core/server.js";
+import { setupServer } from "@/core/server";
 
 setupServer();
