@@ -8,8 +8,8 @@
     "start": {
       "env": ["HOSTNAME", "PORT", "MONGO_URI", "JWT_SECRET", "JWT_ALG", "JWT_EXPIRATION"]
     },
-    "check-types": {
-      "dependsOn": ["^check-types"]
+    "check:types": {
+      "dependsOn": ["^check:types"]
     },
     "dev": {
       "env": ["HOSTNAME", "PORT", "MONGO_URI", "JWT_SECRET", "JWT_ALG", "JWT_EXPIRATION"],
