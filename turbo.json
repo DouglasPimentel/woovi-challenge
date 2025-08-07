@@ -2,17 +2,17 @@
   "$schema": "https://turborepo.com/schema.json",
   "tasks": {
     "build": {
-      "env": ["HOSTNAME", "PORT"],
+      "env": ["HOSTNAME", "PORT", "MONGO_URI", "JWT_SECRET", "JWT_ALG", "JWT_EXPIRATION"],
       "outputs": ["dist/**", "build/**"]
     },
     "start": {
-      "env": ["HOSTNAME", "PORT"]
+      "env": ["HOSTNAME", "PORT", "MONGO_URI", "JWT_SECRET", "JWT_ALG", "JWT_EXPIRATION"]
     },
     "check-types": {
       "dependsOn": ["^check-types"]
     },
     "dev": {
-      "env": ["HOSTNAME", "PORT"],
+      "env": ["HOSTNAME", "PORT", "MONGO_URI", "JWT_SECRET", "JWT_ALG", "JWT_EXPIRATION"],
       "persistent": true,
       "cache": false
     }
