@@ -1,4 +1,4 @@
-import { AddUserMutation } from "@/modules/user/mutations/AddUserMutation";
-import { LoginMutation } from "@/modules/user/mutations/LoginMutation";
+import { AddUserMutation } from "@/modules/user/mutations/add-user-mutation";
+import { LoginMutation } from "@/modules/user/mutations/login-mutation";
 
 export { AddUserMutation, LoginMutation };
