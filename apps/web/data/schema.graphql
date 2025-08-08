@@ -1,0 +1,91 @@
+"""Root query type for the GraphQL schema"""
+type Query {
+  """Fetches an object given its ID"""
+  node(
+    """The ID of an object"""
+    id: ID!
+  ): Node
+
+  """Fetches objects given their IDs"""
+  nodes(
+    """The IDs of objects"""
+    ids: [ID!]!
+  ): [Node]!
+
+  """A simple hello world query"""
+  hello: String
+
+  """Fetch a user by their ID"""
+  userById(id: ID!): User
+
+  """Get a currently logged in user"""
+  me: User
+}
+
+"""An object with an ID"""
+interface Node {
+  """The id of the object."""
+  id: ID!
+}
+
+"""Represents a user"""
+type User implements Node {
+  """The ID of an object"""
+  id: ID!
+
+  """The unique identifier for the user in the database"""
+  _id: String!
+
+  """The tax identification number of the user"""
+  taxId: String!
+
+  """The full name of the user"""
+  name: String!
+
+  """The email address of the user"""
+  email: String!
+
+  """The hashed password of the user"""
+  passwordHash: String!
+
+  """The role of the user, e.g., admin or user"""
+  role: String!
+
+  """The date and time when the user was created"""
+  createdAt: String!
+
+  """The date and time when the user was last updated"""
+  updatedAt: String!
+}
+
+type Mutation {
+  """Create new user"""
+  addUser(input: AddUserInput!): AddUserPayload
+
+  """Generate access token for a user"""
+  login(input: LoginInput!): LoginPayload
+}
+
+type AddUserPayload {
+  user: User!
+  clientMutationId: String
+}
+
+input AddUserInput {
+  taxId: String!
+  name: String!
+  email: String!
+  password: String!
+  clientMutationId: String
+}
+
+type LoginPayload {
+  accessToken: String
+  clientMutationId: String
+}
+
+input LoginInput {
+  email: String!
+  password: String!
+  clientMutationId: String
+}
