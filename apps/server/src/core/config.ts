@@ -1,9 +1,9 @@
 import path from "node:path";
 import dotenv from "dotenv";
 
-const cwd = process.cwd;
+const cwd = process.cwd();
 
-const root = path.join.bind(cwd);
+const root = (...segments: string[]) => path.join(cwd, ...segments);
 
 dotenv.config({ path: root(".env") });
 

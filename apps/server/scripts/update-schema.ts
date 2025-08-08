@@ -3,9 +3,9 @@ import path from "node:path";
 import { printSchema } from "graphql";
 import { schema } from "../src/schema";
 
-const cwd = process.cwd;
+const cwd = process.cwd();
 
-const root = path.join.bind(cwd);
+const root = (...segments: string[]) => path.join(cwd, ...segments);
 
 async function updateSchema() {
   const schemaPath = path.resolve(root("schema/schema.graphql"));
