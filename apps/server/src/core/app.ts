@@ -31,9 +31,14 @@ routes.get("/", async ctx => {
 
 routes.all(
   "/graphql",
-  graphqlHTTP(() => ({
+  graphqlHTTP(request => ({
     schema,
-    graphiql: true,
+    context: {
+      token: request.ctx.header.authorization?.split(" ")[1],
+    },
+    graphiql: {
+      headerEditorEnabled: true,
+    },
   })),
 );
 

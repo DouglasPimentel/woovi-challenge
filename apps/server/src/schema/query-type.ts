@@ -1,6 +1,6 @@
 import { GraphQLObjectType, GraphQLString } from "graphql";
 import { nodeField, nodesField } from "@/schema/nodes";
-import { UserByIDQuery } from "@/modules/user/queries";
+import { UserByIDQuery, MeQuery } from "@/modules/user/queries";
 
 export const QueryType = new GraphQLObjectType({
   name: "Query",
@@ -14,5 +14,6 @@ export const QueryType = new GraphQLObjectType({
       resolve: () => "Hello, world!",
     },
     userById: UserByIDQuery,
+    me: MeQuery,
   }),
 });
