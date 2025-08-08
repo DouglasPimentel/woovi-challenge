@@ -1,7 +1,9 @@
+import React from "react";
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
-
 import type { Route } from "./+types/root";
-import "../styles/main.css";
+import "@/styles/main.css";
+
+import RelayEnvironment from "@/components/relay-environment";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -35,7 +37,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <RelayEnvironment>
+      <React.Suspense fallback={<div>loading...</div>}>
+        <Outlet />
+      </React.Suspense>
+    </RelayEnvironment>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

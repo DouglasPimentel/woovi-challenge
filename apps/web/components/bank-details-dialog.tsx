@@ -9,7 +9,6 @@ import {
   DialogClose,
 } from "@woovi-challenge/ui/components/dialog";
 import { Button } from "@woovi-challenge/ui/components/button";
-import { Input } from "@woovi-challenge/ui/components/input";
 
 export default function BankDetailsDialog() {
   return (
