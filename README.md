@@ -52,6 +52,10 @@ For more information about Woovi complete stack, check out their official blog p
 
 > ✅ In progress
 
+## 📄 Docs
+
+- [Banking System Design](./docs/rfc-001-bank-design.md)
+
 ## 📋 Tasks
 
 ### 🧱 Initial Setup

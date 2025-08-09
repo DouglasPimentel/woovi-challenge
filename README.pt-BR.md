@@ -52,6 +52,10 @@ Para mais informações sobre a Pilha de Tecnologia completa da Woovi, confira a
 
 > ✅ Em andamento
 
+## 📄 Docs
+
+- [Projeto do Sistema Bancário](./docs/rfc-001-bank-design.md)
+
 ## 📋 Tarefas
 
 Lista de atividades para concluir o desafio:
