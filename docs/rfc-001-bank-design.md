@@ -66,6 +66,7 @@ The diagram below illustrates the main relationships within the domain and trans
 | type          | String | Account type (current, savings, payment) |
 | balance       | Number | Account balance (in cents)               |
 | createdAt     | Date   | Creation timestamp                       |
+| updatedAt     | Date   | Last update timestamp                    |
 
 #### 3. Transaction
 
@@ -78,6 +79,8 @@ The diagram below illustrates the main relationships within the domain and trans
 | type          | String | Transaction type (pix, debit, credit)      |
 | status        | String | Transaction status (processing, completed) |
 | date          | Date   | Date of the operation                      |
+| createdAt     | Date   | Creation timestamp                         |
+| updatedAt     | Date   | Last update timestamp                      |
 
 ---
 
