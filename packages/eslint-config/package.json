@@ -1,6 +1,7 @@
 {
   "name": "@woovi-challenge/eslint-config",
   "version": "0.1.0",
+  "type": "module",
   "exports": {
     "./base": "./base.js",
     "./react-internal": "./react-internal.js"

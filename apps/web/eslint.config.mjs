@@ -1,4 +1,4 @@
-import { config } from "@woovi-challenge/eslint-config/react-internal";
+import { config } from "../../packages/eslint-config/react-internal.mjs";
 
 /** @type {import("eslint").Linter.Config} */
 export default config;
