@@ -140,6 +140,7 @@ Represents bank accounts tied to individual users. An account is uniquely identi
 - `agency`: Agency code (string)
 - `type`: String (`current`, `savings`, `payment`, etc.)
 - `balance`: Current balance (in cents)
+- `active`: Account status
 - `createdAt`, `updatedAt`: Timestamps
 
 **Sample `account` document:**
