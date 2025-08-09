@@ -1,5 +1,6 @@
 {
   "$schema": "https://turborepo.com/schema.json",
+  "globalEnv": ["DEV"],
   "tasks": {
     "build": {
       "env": ["HOSTNAME", "PORT", "MONGO_URI", "JWT_SECRET", "JWT_ALG", "JWT_EXPIRATION", "GRAPHQL_ENDPOINT"],
@@ -11,6 +12,7 @@
     "check:types": {
       "dependsOn": ["^check:types"]
     },
+    "lint": {},
     "dev": {
       "env": ["HOSTNAME", "PORT", "MONGO_URI", "JWT_SECRET", "JWT_ALG", "JWT_EXPIRATION", "GRAPHQL_ENDPOINT"],
       "persistent": true,

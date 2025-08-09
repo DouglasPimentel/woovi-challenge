@@ -14,6 +14,7 @@
     "start": "turbo run start",
     "dev": "turbo run dev",
     "check:types": "turbo run check:types",
+    "lint": "turbo run lint",
     "prettier:check": "prettier --config prettier.config.mjs --check \"**/*.{js,jsx,ts,tsx,md}\"",
     "prettier:format": "prettier --config prettier.config.mjs --write \"**/*.{js,jsx,ts,tsx,md}\""
   },

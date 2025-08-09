@@ -1,8 +1,6 @@
-import type { Route } from "./+types/dashboard";
-
 import { Container } from "@woovi-challenge/ui/components/container";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return [{ title: "Dashboard - Banking System" }, { name: "description", content: "Welcome to Banking System!" }];
 }
 

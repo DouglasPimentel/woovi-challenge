@@ -1,7 +1,6 @@
 import { Container } from "@woovi-challenge/ui/components/container";
 import { Logo } from "@woovi-challenge/ui/components/logo";
 import { Avatar, AvatarImage, AvatarFallback } from "@woovi-challenge/ui/components/avatar";
-import { Button } from "@woovi-challenge/ui/components/button";
 
 import NewTransactionDialog from "@/components/new-transaction-dialog";
 import BankDetailsDialog from "@/components/bank-details-dialog";

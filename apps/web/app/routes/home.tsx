@@ -1,9 +1,7 @@
-import type { Route } from "./+types/home";
-
 import { Logo } from "@woovi-challenge/ui/components/logo";
 import CustomNavLink from "@/components/custom-nav-link";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return [{ title: "Banking System" }, { name: "description", content: "Welcome to Banking System!" }];
 }
 

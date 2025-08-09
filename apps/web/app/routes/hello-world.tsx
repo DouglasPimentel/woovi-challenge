@@ -1,8 +1,6 @@
-import type { Route } from "./+types/hello-world";
-
 import Hello from "@/components/hello";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return [{ title: "Hello World - Banking System" }, { name: "description", content: "Welcome to Banking System!" }];
 }
 

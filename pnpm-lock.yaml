@@ -145,6 +145,9 @@ importers:
       '@types/relay-runtime':
         specifier: ^19.0.2
         version: 19.0.2
+      '@woovi-challenge/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
       '@woovi-challenge/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config

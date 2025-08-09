@@ -1,10 +1,8 @@
-import type { Route } from "./+types/login";
-
 import { Logo } from "@woovi-challenge/ui/components/logo";
 import { Input } from "@woovi-challenge/ui/components/input";
 import { Button } from "@woovi-challenge/ui/components/button";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return [{ title: "Login - Banking System" }, { name: "description", content: "Welcome to Banking System!" }];
 }
 
