@@ -72,6 +72,9 @@ importers:
       '@types/node':
         specifier: ^24.1.0
         version: 24.1.0
+      '@woovi-challenge/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/eslint-config
       '@woovi-challenge/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config

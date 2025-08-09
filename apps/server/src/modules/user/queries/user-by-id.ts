@@ -13,7 +13,7 @@ export const UserByIDQuery: GraphQLFieldConfig<IUser, GraphQLContext, Args> = {
   args: {
     id: { type: new GraphQLNonNull(GraphQLID) },
   },
-  resolve: async (root, { id }, context) => {
+  resolve: async (_root, { id }) => {
     const user = await UserModel.findById(id);
 
     return user;

@@ -4,13 +4,11 @@ import { UserModel, IUser } from "@/modules/user/model";
 import type { GraphQLContext } from "@/schema/context";
 import { verifyToken } from "@/modules/auth/jwt";
 
-type Args = {};
-
-export const MeQuery: GraphQLFieldConfig<IUser, GraphQLContext, Args> = {
+export const MeQuery: GraphQLFieldConfig<IUser, GraphQLContext, unknown> = {
   type: GraphQLUser,
   description: "Get a currently logged in user",
   args: {},
-  resolve: async (root, args, context) => {
+  resolve: async (_root, _args, context) => {
     const { token } = context;
 
     const decodedToken = await verifyToken(token!);
