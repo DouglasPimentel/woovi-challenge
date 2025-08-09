@@ -56,17 +56,18 @@ The diagram below illustrates the main relationships within the domain and trans
 
 #### 2. Account
 
-| Field         | Type   | Description                              |
-| ------------- | ------ | ---------------------------------------- |
-| ID            | String | Unique identifier (UUID)                 |
-| ownerId       | String | Reference to the user who owns it        |
-| accountNumber | String | Account number (unique per account)      |
-| accountDigit  | String | Verification digit (DV)                  |
-| agency        | String | Bank agency number                       |
-| type          | String | Account type (current, savings, payment) |
-| balance       | Number | Account balance (in cents)               |
-| createdAt     | Date   | Creation timestamp                       |
-| updatedAt     | Date   | Last update timestamp                    |
+| Field         | Type    | Description                              |
+| ------------- | ------- | ---------------------------------------- |
+| ID            | String  | Unique identifier (UUID)                 |
+| ownerId       | String  | Reference to the user who owns it        |
+| accountNumber | String  | Account number (unique per account)      |
+| accountDigit  | String  | Verification digit (DV)                  |
+| agency        | String  | Bank agency number                       |
+| type          | String  | Account type (current, savings, payment) |
+| balance       | Number  | Account balance (in cents)               |
+| active        | Boolean | Account status                           |
+| createdAt     | Date    | Creation timestamp                       |
+| updatedAt     | Date    | Last update timestamp                    |
 
 #### 3. Transaction
 
@@ -139,7 +140,7 @@ Represents bank accounts tied to individual users. An account is uniquely identi
 - `agency`: Agency code (string)
 - `type`: String (`current`, `savings`, `payment`, etc.)
 - `balance`: Current balance (in cents)
-- `createdAt`: Timestamp
+- `createdAt`, `updatedAt`: Timestamps
 
 **Sample `account` document:**
 
@@ -152,7 +153,9 @@ Represents bank accounts tied to individual users. An account is uniquely identi
   "agency": "0001",
   "type": "payment",
   "balance": 250000,
-  "createdAt": "2025-07-22T13:05:00Z"
+  "active": true,
+  "createdAt": "2025-07-22T13:00:00Z",
+  "updatedAt": "2025-07-22T13:00:00Z"
 }
 ```
 
@@ -173,6 +176,7 @@ Records all monetary transactions between accounts. Includes debits and credits 
 - `type`: String (`pix`, `debit` or `credit`)
 - `status`: String (`processing`, `completed`)
 - `date`: Timestamp of the transaction
+- `createdAt`, `updatedAt`: Timestamps
 
 **Sample `transaction` document:**
 
@@ -184,6 +188,7 @@ Records all monetary transactions between accounts. Includes debits and credits 
   "amount": 5000,
   "type": "debit",
   "status": "processing",
-  "date": "2025-07-22T13:15:00Z"
+  "createdAt": "2025-07-22T13:00:00Z",
+  "updatedAt": "2025-07-22T13:00:00Z"
 }
 ```
